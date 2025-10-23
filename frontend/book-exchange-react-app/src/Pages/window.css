@@ -1,0 +1,38 @@
+.window {
+    background-color: #D9CCC1;
+
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 0%);
+
+    border-radius: 10px;
+    padding-top: 30px;
+    padding: 50px;
+}
+
+.window input {
+    border: 1px solid #736355;
+    border-radius: 10px;
+    width: 100%;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.window button {
+    background-color: #736355;
+    color: white;
+    border: none;
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    padding: 14px;
+
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+
+    font-weight: bold;
+}

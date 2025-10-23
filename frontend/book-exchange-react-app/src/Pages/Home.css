@@ -1,0 +1,115 @@
+.main-container {
+  padding: 40px 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #40352C;
+}
+
+.search-bar {
+  display: flex;
+  gap: 16px;
+  margin: 0 auto 34px;
+  padding: 12px;
+  background: #D9CCC1;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+.search-input {
+  flex: 2.5;
+  padding: 12px 20px;      
+  font-size: 14px;         
+  color: #40352C;
+  border: 1px solid #736355;
+  border-radius: 8px;
+  background: #D9CCC1;
+}
+
+.search-select {
+  flex: 1;
+  padding: 12px 20px;      
+  font-size: 14px;         
+  color: #40352C;
+  border: 1px solid #736355;
+  border-radius: 8px;
+  background: #D9CCC1;
+}
+
+.search-input::placeholder {
+  color: #736355;
+}
+
+.search-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='%23888' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L5 6L10 0H0Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-color: #D9CCC1;
+}
+
+.search-input:focus,
+.search-select:focus {
+  outline: none;
+  border-color: #40352C;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 24px;
+  margin: 0 auto;           
+}
+
+.card {
+  flex: 0 0 calc((90% - 6 * 24px) / 7);
+  background: #D9CCC1;
+  border: 1px solid #736355;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card h2 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  color: #40352C;
+}
+
+.tags {
+  color: #736355;
+  margin-bottom: 8px;
+  font-size: 14px;    
+  font-weight: 500;   
+  white-space: nowrap;
+}
+
+.fav {
+  margin-top: auto;         
+  background: #736355;
+  color: #D9CCC1;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background .2s;
+}

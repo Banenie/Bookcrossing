@@ -1,0 +1,25 @@
+stages:
+  - test
+
+variables:
+  TESTS_LETSGO:
+  GOCACHE: $CI_PROJECT_DIR/.cache/go-build
+
+test-go:
+  stage: test
+  image: golang:1.24
+  tags:
+    - students-buildkit-medium
+  script:
+    - mkdir -p $GOCACHE
+    - cd backend/go
+    - go test ./internal/auth
+
+test-java:
+  stage: test
+  image: gradle:8.12.1-jdk17
+  tags:
+    - students-buildkit-medium
+  script:
+    - cd backend/java
+    - gradle test --info -x generateProto
